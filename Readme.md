@@ -1,7 +1,11 @@
 
-# case.c
+# trim.c
 
   String trim utility
+
+## Installation
+
+    $ clib install stephenmathieson/trim.c
 
 ## API
 
