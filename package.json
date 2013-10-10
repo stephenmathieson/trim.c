@@ -1,0 +1,17 @@
+{
+  "name": "trim",
+  "version": "0.0.1",
+  "repo": "stephenmathieson/trim.c",
+  "description": "String trim utility",
+  "keywords": [
+    "string",
+    "trim",
+    "trim left",
+    "trim right"
+  ],
+  "license": "MIT",
+  "src": [
+    "src/trim.c",
+    "src/trim.h"
+  ]
+}
