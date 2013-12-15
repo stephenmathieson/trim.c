@@ -13,5 +13,8 @@
   "src": [
     "src/trim.c",
     "src/trim.h"
-  ]
+  ],
+  "development": {
+    "stephenmathieson/describe.h": "master"
+  }
 }

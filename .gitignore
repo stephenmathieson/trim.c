@@ -1,1 +1,4 @@
 test-trim
+test/trim
+test/trim-left
+test/trim-right

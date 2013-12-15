@@ -1,6 +1,16 @@
 
-test: test/test.c src/trim.c
-	$(CC) -std=c99 $^ -o test-trim -Isrc
-	./test-trim
+CC     ?= cc
+SRC     = $(wildcard src/*.c)
+TESTS   = $(wildcard test/*.c)
+CFLAGS  = -std=c99 -Wall -Isrc -Ideps
 
-.PHONY: test
+test: $(TESTS)
+
+$(TESTS):
+	@$(CC) $(CFLAGS) $@ $(SRC) -o $(basename $@)
+	@./$(basename $@)
+
+clean:
+	$(foreach t, $(TESTS), rm -f $(basename $(t));)
+
+.PHONY: test $(TESTS) clean
