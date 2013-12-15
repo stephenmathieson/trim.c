@@ -1,6 +1,6 @@
 {
   "name": "trim",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repo": "stephenmathieson/trim.c",
   "description": "String trim utility",
   "keywords": [
