@@ -5,6 +5,11 @@
 #include "describe/describe.h"
 
 describe("trim_right", {
+  it("should handle empty strings", {
+    char str[] = "";
+    assert_str_equal("", trim_right(str));
+  });
+
   it("should not remove leading whitespace", {
     char str[] = "\t\n hello";
     assert_str_equal("\t\n hello", trim_right(str));
